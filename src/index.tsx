@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import DetailPage from './pages/DetailPage'
+import Button from './components/Button'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
@@ -13,8 +13,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/detail',
-    element: <DetailPage />,
+    path: '/components/button',
+    element: <Button />,
   },
 ])
 

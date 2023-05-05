@@ -13,6 +13,12 @@ const componentBitsList: Array<CompListType> = [
       path: '경로',
       discription: '설명',
       example: '예제'
+    },
+    {
+      name: 'Button',
+      path: 'src/components/Button.tsx',
+      discription: '버튼',
+      example: '/components/button'
     }
 ];
 

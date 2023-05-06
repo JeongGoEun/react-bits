@@ -11,20 +11,20 @@ const componentBitsList: Array<CompListType> = [
     {
       name: 'Button',
       path: 'src/components/Button.tsx',
-      discription: '버튼',
+      discription: 'button',
       example: '/components/button'
     },
     {
       name: 'Checkbox',
       path: 'src/components/Checkbox.tsx',
-      discription: '체크박스',
+      discription: 'checkbox state',
       example: '/components/checkbox'
     },
     {
       name: 'Input',
-      path: '',
-      discription: '',
-      example: ''
+      path: 'src/components/Input.tsx',
+      discription: 'input form',
+      example: '/components/input'
     },
     {
       name: 'Radio',

@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Button from './components/Button'
-import Checkbox from './components/Checkbox'
+import { Button, Checkbox, Input } from './components'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
@@ -20,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/components/checkbox',
     element: <Checkbox />,
+  },
+  {
+    path: '/components/input',
+    element: <Input />,
   },
 ])
 

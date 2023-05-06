@@ -4,6 +4,7 @@ import './index.css'
 import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Button from './components/Button'
+import Checkbox from './components/Checkbox'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/components/button',
     element: <Button />,
+  },
+  {
+    path: '/components/checkbox',
+    element: <Checkbox />,
   },
 ])
 

@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
-import React, { useState } from 'react'
+import { MouseEvent, MouseEventHandler, useState } from 'react'
 
 const buttonStyle = css`
   min-width: 100px;
@@ -10,8 +10,14 @@ const buttonStyle = css`
 const Button = () => {
   const [clickCnt, setClickCnt] = useState(0)
 
-  const handleClick = () => {
+  // * Define handler type
+  const handleButtonClick: MouseEventHandler<HTMLButtonElement> = (e) => {
     setClickCnt(clickCnt + 1)
+  }
+
+  // * Define event type
+  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
+    setClickCnt(clickCnt - 1)
   }
 
   return (
@@ -23,8 +29,11 @@ const Button = () => {
 
       <h1>Examples</h1>
       <div>
+        <button css={buttonStyle} onClick={handleButtonClick}>
+          +
+        </button>
         <button css={buttonStyle} onClick={handleClick}>
-          버튼
+          -
         </button>
         <div style={{ marginTop: 30 }}>clicked state: {clickCnt}</div>
       </div>

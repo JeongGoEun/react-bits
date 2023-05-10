@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
-import React, { ChangeEvent, useState } from 'react'
+import React, { ChangeEvent, ChangeEventHandler, EventHandler, useState } from 'react'
 
 const radioStyle = css`
   min-width: 100px;
@@ -17,7 +17,11 @@ const radioOptions = [
 const Radio = () => {
   const [selectedOption, setSelectedOption] = useState<String>('')
 
-  const handleOptionChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleOptionChangeEventType = (e: ChangeEvent<HTMLInputElement>) => {
+    setSelectedOption(e.target.value)
+  }
+
+  const handleOptionChangeFuncType: ChangeEventHandler<HTMLInputElement> = (e) => {
     setSelectedOption(e.target.value)
   }
 
@@ -33,7 +37,14 @@ const Radio = () => {
         {radioOptions.map((option, idx) => {
           return (
             <div>
-              <input id={option.id} name='radio-group' type='radio' key={`radio-${idx}`} value={option.value} onChange={handleOptionChange} />
+              <input
+                id={option.id}
+                name='radio-group'
+                type='radio'
+                key={`radio-${idx}`}
+                value={option.value}
+                onChange={idx < 2 ? handleOptionChangeFuncType : handleOptionChangeEventType}
+              />
               <label htmlFor={option.id}>{option.name}</label>
             </div>
           )

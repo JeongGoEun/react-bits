@@ -16,13 +16,13 @@ const Input = () => {
 
   return (
     <div>
-      <h1>Button</h1>
+      <h1>Input</h1>
       <div>input 예시</div>
 
       <hr></hr>
 
       <h1>Examples</h1>
-      <div>format options(string, number, phone, mail...)</div>
+      <div>format options(string, number, phone, mail... 추가 예정)</div>
       <input css={inputStyle} onChange={handleChange}></input>
       <div>
         <div style={{ marginTop: 30 }}>input value: {inputValue}</div>

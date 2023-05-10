@@ -28,9 +28,9 @@ const componentBitsList: Array<CompListType> = [
     },
     {
       name: 'Radio',
-      path: '',
-      discription: '',
-      example: ''
+      path: 'src/components/Radio.tsx',
+      discription: 'radio value',
+      example: '/components/radio'
     },
     {
       name: 'Slider',

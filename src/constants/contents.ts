@@ -34,9 +34,9 @@ const componentBitsList: Array<CompListType> = [
     },
     {
       name: 'Slider',
-      path: '',
-      discription: '',
-      example: ''
+      path: 'src/components/Slider.tsx',
+      discription: 'range slider component',
+      example: '/components/range-slider'
     },
     {
       name: 'Switch',

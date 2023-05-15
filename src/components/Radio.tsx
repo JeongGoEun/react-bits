@@ -25,6 +25,10 @@ const Radio = () => {
     setSelectedOption(e.target.value)
   }
 
+  const handleOptionChangeAllType: ChangeEventHandler<HTMLInputElement> = (e: ChangeEvent<HTMLInputElement>) => {
+    setSelectedOption(e.target.value)
+  }
+
   return (
     <div>
       <h1>Radio</h1>

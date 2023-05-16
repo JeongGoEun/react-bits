@@ -40,9 +40,9 @@ const componentBitsList: Array<CompListType> = [
     },
     {
       name: 'Switch',
-      path: '',
-      discription: '',
-      example: ''
+      path: 'src/components/Slider.tsx',
+      discription: 'toggle switch',
+      example: '/components/switch'
     }
 ];
 

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Button, Checkbox, Input, Radio, RangeSlider } from './components'
+import { Button, Checkbox, Input, Radio, RangeSlider, Switch } from './components'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
@@ -31,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: '/components/range-slider',
     element: <RangeSlider />,
+  },
+  {
+    path: '/components/switch',
+    element: <Switch />,
   },
 ])
 
